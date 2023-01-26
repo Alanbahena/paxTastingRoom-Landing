@@ -1,0 +1,42 @@
+@import "../../styles/global.scss";
+
+.container {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+
+  @include respond(phone) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.box-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+  border-radius: 1rem;
+}
+
+.card {
+  background-color: rgba($color-primary-dark, $alpha: 0.8);
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
+
+  & img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.btn {
+  align-self: center;
+}

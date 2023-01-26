@@ -1,0 +1,13 @@
+/**
+ * Requires:
+ * /settings/palette
+ * /settings/fonts
+ */
+
+@mixin bodyElement {
+  /* Typography */
+  font-family: $body-font-family;
+  color: $color-primary-light;
+  font-size: $font-size-root;
+  font-weight: 400;
+}

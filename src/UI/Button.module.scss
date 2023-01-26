@@ -1,0 +1,24 @@
+@import "../styles/global.scss";
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: white;
+
+    background-color: $color-primary-dark;
+    padding: 1rem 2.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.15rem);
+    transition: transform 0.3s;
+    box-shadow: 0 1rem 2rem rgba($color-primary-light, 0.1);
+  }
+}

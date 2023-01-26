@@ -1,0 +1,18 @@
+@import "../styles/global.scss";
+
+// GRID
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh min-content 100vh repeat(3, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      6,
+      [col-start] minmax(min-content, 20rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @include respond(tab-port) {
+    grid-template-rows: 100vh min-content min-content repeat(3, min-content);
+  }
+}

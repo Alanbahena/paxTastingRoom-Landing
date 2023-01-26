@@ -1,0 +1,65 @@
+@import "../../styles/global.scss";
+
+.container {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
+}
+
+.img {
+  width: 170px;
+  height: auto;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.link {
+  &:link,
+  &:visited {
+    color: $color-primary-light;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-left: 6rem;
+
+    @include respond(ipad-pro) {
+      margin-left: 4rem;
+    }
+
+    &:hover {
+      color: $color-tertirary-light;
+    }
+  }
+}
+
+.item {
+  color: $color-primary-light;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-left: 6rem;
+  cursor: pointer;
+
+  @include respond(ipad-pro) {
+    margin-left: 4rem;
+  }
+
+  &:hover {
+    color: $color-tertirary-light;
+  }
+}
