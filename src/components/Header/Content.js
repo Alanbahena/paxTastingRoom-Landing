@@ -33,7 +33,7 @@ const Content = () => {
             Chill by the beach, taste the beer, feel the peace.
           </h1>
           <Button href={menu} className={clasess.btn} target="_blank">
-            Explorar Menu
+            Explorar Menú
           </Button>
         </div>
       </div>

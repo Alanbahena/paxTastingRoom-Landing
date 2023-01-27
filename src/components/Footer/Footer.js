@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className={clasess.container}>
       <img src={logo} alt="logo" className={clasess.logo}></img>
-      <span className={clasess.text}>Siguenos en redes sociales</span>
+      <span className={clasess.text}>Síguenos en redes sociales</span>
       <div className={clasess.box}>
         <a href="https://www.facebook.com/paxtastingroom/">
           <img src={fb} alt="fb"></img>

@@ -42,7 +42,7 @@ const Food = () => {
         ))}
       </div>
       <Button href={pdf} className={clasess.btn} target="_blank">
-        Explorar Menu
+        Explorar Menú
       </Button>
     </div>
   );
