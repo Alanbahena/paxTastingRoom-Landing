@@ -31,7 +31,7 @@ const Food = () => {
 
   return (
     <div className={clasess.container} id="#menu">
-      <h2>Conoce nuestro menu</h2>
+      <h2>Conoce nuestro menú</h2>
       <div className={clasess["box-cards"]}>
         {menu.map((item) => (
           <div className={clasess.card} key={item.id}>
